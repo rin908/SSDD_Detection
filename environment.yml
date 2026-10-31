@@ -1,0 +1,14 @@
+# 先创建独立环境，再按 docs/01_环境搭建.md 的顺序安装 wheel。
+# 不使用 pip 子节，避免 conda env create 自动从错误索引安装 torch/mmcv。
+name: mmdetection
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+variables:
+  PIP_INDEX_URL: https://pypi.tuna.tsinghua.edu.cn/simple
+# Python 包版本契约（安装入口：requirements-lock.txt）：
+# torch==2.1.0+cu118; torchvision==0.16.0+cu118
+# mmcv==2.1.0 (官方 cu118/torch2.1 预编译 wheel，禁止源码)
+# mmengine==0.10.4; mmdet==3.3.0; numpy<2; pycocotools

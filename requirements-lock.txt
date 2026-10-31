@@ -1,0 +1,11 @@
+# 必须先按文档安装 torch 和 mmcv；此文件约束版本，不是跨平台哈希锁。
+--index-url https://pypi.tuna.tsinghua.edu.cn/simple
+--only-binary=mmcv
+torch==2.1.0+cu118
+torchvision==0.16.0+cu118
+mmcv==2.1.0
+mmengine==0.10.4
+mmdet==3.3.0
+numpy<2
+pycocotools
+Pillow

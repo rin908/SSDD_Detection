@@ -1,0 +1,8 @@
+Official-SSDD-OPEN/
+data/
+work_dirs/
+__pycache__/
+*.py[cod]
+.venv/
+results/*/
+!results/.gitkeep
